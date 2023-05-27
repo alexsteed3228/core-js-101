@@ -110,7 +110,7 @@ function getLinearEquationRoot( a, b ) {
  *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors( x1, y1, x2, y2 ) {
-  return Math.acos((x1*x2+y1*y2)/(Math.sqrt(x1*x1 + y1*y1)*Math.sqrt(x2*x2+y2*y2)))
+  return Math.acos((x1 * x2 + y1 * y2) / (Math.sqrt(x1 * x1 + y1 * y1) * Math.sqrt(x2 * x2 + y2 * y2)))
 }
 
 /**
@@ -181,7 +181,7 @@ function getParallelepipedDiagonal( a, b, c ) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen( num, pow ) {
-  for(let i =0; i<pow;i++){
+  for(let i = 0; i < pow; i++){
     num = num/10
   }
   num = Math.round(num);
@@ -207,7 +207,7 @@ function roundToPowerOfTen( num, pow ) {
  *   17 => true
  */
 function isPrime( n ) {
-  for(let i = 2; i<n; i++){
+  for(let i = 2; i < n; i++){
     if(n % i == 0){
       return false
     }
