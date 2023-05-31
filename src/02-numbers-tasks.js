@@ -181,7 +181,7 @@ function roundToPowerOfTen(num, pow) {
   for (let i = 0; i < pow; i += 1) {
     n /= 10;
   }
-  n = Math.round(num);
+  n = Math.round(n);
   return n * 10 ** pow;
 }
 
